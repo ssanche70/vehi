@@ -1,0 +1,242 @@
+.main-header {
+    height: auto;
+    left: 0;
+    position: relative;
+    /*position: relative;*/
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .sticky-wrapper {
+    background: #ffffff;
+  }
+  .navgiation-wrapper {
+    background: #ffffff;
+  }
+  .top-bar {
+    background: #FE3C47;
+    line-height: 42px;
+    color: #FFFFFF;
+    font-size: 14px;
+  }
+  .top-bar i {
+    color: #FFFFFF;
+    margin-right: 5px;
+    display: inline-block;
+  }
+  .top-bar a {
+    color: #FFFFFF;
+  }
+  .top-bar p {
+    margin-top: 10px;
+    color: #FFFFFF;
+  }
+  .top-bar-social {
+    float: right;
+    margin-right: 12px;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 0px solid #FFF;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+  }
+  .top-bar-social a {
+    display: inline-block;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .top-bar-social a i.fa {
+    width: 24px;
+    height: 24px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    text-align: center;
+    color: #666;
+    background: #fafafa;
+    line-height: 24px;
+    font-size: 14px;
+    position: relative;
+    top: -2px;
+  }
+  .top-bar-social a:hover i.fa {
+    color: #FE3C47;
+    background: #fafafa;
+  }
+  .sticky-header {
+    height: auto;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .sticky-header .top-bar {
+    background: rgba(254, 60, 71, 0.9);
+  }
+  .sticky-header .navgiation-wrapper {
+    background: rgba(255, 255, 255, 0.97);
+  }
+  .sticky-header .sticky-wrapper {
+    background: transparent !important;
+  }
+  .stuck {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0px;
+    z-index: 99;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+    background: rgba(255, 255, 255, 0.97);
+    width: 100%;
+    padding: 0px;
+    margin: 0 !important;
+  }
+  .logo {
+    margin-top: 32px;
+    margin-bottom: 0;
+  }
+  .header-container {
+    border-bottom: 0px solid #EEEEEE;
+    padding-bottom: 0px;
+    box-shadow: 0px 0px 2px -4px rgba(0, 0, 0, 0.2);
+    -webkit-transition: 0.2s 0.2s ease-out;
+    -moz-transition: 0.2s 0.2s ease-out;
+    -o-transition: 0.2s 0.2s ease-out;
+    transition: 0.2s 0.2s ease-out;
+  }
+  /***********************************************************************************************/
+  /* 03. MAIN NAVIGATION MENU */
+  /***********************************************************************************************/
+  a.logo {
+    margin-top: 10px;
+    display: inline-block;
+  }
+  a.logo img {
+    display: block;
+  }
+  .navbar-default {
+    border: none;
+    background: transparent;
+    margin-bottom: 0px;
+    padding: 12px 0;
+  }
+  .navbar-default .navbar-nav {
+    margin-top: 10px;
+  }
+  .navbar-default .navbar-nav > li {
+    margin-left: 10px;
+  }
+  .navbar-default .navbar-nav > li > a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+    text-transform: uppercase;
+    padding-bottom: 24px;
+  }
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #000000;
+  }
+  .navbar-default .navbar-nav li.drop {
+    position: relative;
+  }
+  .navbar-default .navbar-nav li ul.drop-down {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 71px;
+    left: 0;
+    width: 190px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3;
+    text-align: left;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .navbar-default .navbar-nav li ul.drop-down li {
+    list-style: none;
+    display: block;
+    margin: 0;
+  }
+  .navbar-default .navbar-nav li ul.drop-down li ul.drop-down.level3 {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    top: 0px;
+    left: 100%;
+    border-bottom: none;
+  }
+  .navbar-default .navbar-nav li ul.drop-down li a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    display: inline-block;
+    text-decoration: none;
+    display: block;
+    color: #000000;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    border: none;
+  }
+  .navbar-default .navbar-nav li ul.drop-down li a:hover {
+    background: rgba(0, 0, 0, 0.9);
+    color: #FFFFFF;
+  }
+  .navbar-default .navbar-nav li ul.drop-down li:hover ul.drop-down.level3 {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  .navbar-default .navbar-nav li ul.drop-down li:last-child {
+    border-bottom: none;
+  }
+  .navbar-default .navbar-nav li:hover > ul.drop-down {
+    visibility: visible;
+    opacity: 1;
+  }
+  header.one-page .navbar-nav > li {
+    margin-left: 0;
+  }
+  header.one-page .navbar-nav > li > a span {
+    color: #FE3C47;
+  }
+  .menu-container {
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
+    padding: 0px 20px;
+  }
+  .menu-container .navbar-nav li ul.drop-down {
+    top: 66px;
+  }
